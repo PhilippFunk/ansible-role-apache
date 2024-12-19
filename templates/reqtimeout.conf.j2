@@ -1,0 +1,5 @@
+{% if apache_mod_reqtimeout_timeouts is defined %}
+{% for item in apache_mod_reqtimeout_timeouts %}
+RequestReadTimeout {{ item }}
+{% endfor %}
+{% endif %}
